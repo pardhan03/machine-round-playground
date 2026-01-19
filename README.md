@@ -61,6 +61,40 @@ This repo is ideal for **Frontend / React Developer interviews** at startups and
 
 ---
 
+# Drag and Drop List
+
+A React machine-coding challenge that demonstrates **drag and drop functionality** for reordering list items. 
+This challenge focuses on handling user interactions, DOM events, and state updates in a clean and scalable way.
+
+## Requirements
+
+- Display a list of items
+- Drag an item and drop it at a new position
+- Update list order after drop
+- Maintain smooth UX while dragging
+- No external drag-and-drop libraries (unless specified)
+
+## 🧠 Concepts
+
+- Mouse / Drag events
+- State management with `useState`
+- Event handling
+- Conditional styling
+- Immutability in state updates
+- Component re-rendering
+
+# Modal Close on Outside Click
+
+## Requirements
+- Open modal on button click
+- Close modal when clicking outside
+- Close on ESC key
+
+## 🧠 Concepts
+- useRef
+- useEffect
+- Event bubbling
+
 ## 🧪 How to Run Locally
 
 ```bash

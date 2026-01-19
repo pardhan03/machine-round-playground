@@ -1,0 +1,8 @@
+.common-button {
+  outline: none;
+  transition: all 0.2s ease;
+}
+
+.common-button:hover:not(:disabled) {
+  transform: translateY(-1px);
+}

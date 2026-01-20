@@ -1,0 +1,45 @@
+/* Board layout */
+.kanban-board {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 40px;
+  background-color: #ffffff;
+}
+
+/* Phase Column */
+.phase-column {
+  width: 300px;
+  background-color: #f3f3f3;
+  padding: 16px;
+  border-radius: 6px;
+}
+
+/* Phase title */
+.phase-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+/* Task list */
+.task-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Task card */
+.task-card {
+  background-color: #ffffff;
+  padding: 12px 14px;
+  border-radius: 4px;
+  font-size: 14px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.task-card:hover {
+  transform: translateY(-2px);
+}

@@ -1,15 +1,34 @@
 import React from 'react'
 import './kanban.css'
-import TaskCard from './TaskCard';
 
-const PhaseColumn = ({ title, tasks }) => {
+const PhaseColumn = ({
+  title,
+  data,
+  column,
+  onDrag,
+  onDragOver,
+  onDrop,
+}) => {
+
   return (
-    <div className="phase-column">
+    <div
+      className="phase-column"
+      onDrop={(event) => onDrop(event, column?.id)}
+      onDragOver={(e) => onDragOver(e)}
+
+    >
       <h3 className="phase-title">{title}</h3>
 
       <div className="task-list">
-        {tasks.map((task) => (
-          <TaskCard key={task.id} title={task.title} />
+        {data.map((task) => (
+          <div
+            id={task?.id}
+            className="task-card"
+            draggable={true}
+            onDrag={(e) => onDrag(e, task, column?.id)}
+          >
+            {task?.title}
+          </div>
         ))}
       </div>
     </div>

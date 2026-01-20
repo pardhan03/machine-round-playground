@@ -1,6 +1,36 @@
 import ModalOutsideClickApp from "../../chanllenges/modal-outside-click/App"
 import DragDrop from "../../chanllenges/drap-drop/App"
 
+export const kanbanData = [
+  {
+    id: "todo",
+    title: "Todo",
+    tasks: [
+      { id: 1, title: "Design UI mockups" },
+      { id: 2, title: "Set up project repository" },
+      { id: 3, title: "Write unit test" },
+      { id: 4, title: "Integrate payment gateway" },
+    ],
+  },
+  {
+    id: "in-progress",
+    title: "In Progress",
+    tasks: [
+      { id: 5, title: "Develop authentication flow" },
+      { id: 6, title: "Implement responsive design" },
+    ],
+  },
+  {
+    id: "completed",
+    title: "Completed",
+    tasks: [
+      { id: 7, title: "Set up CI/CD pipeline" },
+      { id: 8, title: "Conduct code reviews" },
+      { id: 9, title: "Deploy initial version to staging" },
+    ],
+  },
+];
+
 export const ROUTES = [
   {
     path: "/modal-outside-click",
@@ -10,36 +40,6 @@ export const ROUTES = [
   {
     path: "/kanban-board",
     label: "Drag&Drop",
-    element: <DragDrop />,
-  },
-];
-
-export const kanbanData = [
-  {
-    id: "todo",
-    title: "Todo",
-    tasks: [
-      { id: "todo-1", title: "Design UI mockups" },
-      { id: "todo-2", title: "Set up project repository" },
-      { id: "todo-3", title: "Write unit test" },
-      { id: "todo-4", title: "Integrate payment gateway" },
-    ],
-  },
-  {
-    id: "in-progress",
-    title: "In Progress",
-    tasks: [
-      { id: "progress-1", title: "Develop authentication flow" },
-      { id: "progress-2", title: "Implement responsive design" },
-    ],
-  },
-  {
-    id: "completed",
-    title: "Completed",
-    tasks: [
-      { id: "completed-1", title: "Set up CI/CD pipeline" },
-      { id: "completed-2", title: "Conduct code reviews" },
-      { id: "completed-3", title: "Deploy initial version to staging" },
-    ],
+    element: <DragDrop initialData={kanbanData}/>,
   },
 ];

@@ -122,3 +122,44 @@
   font-weight: 600;
   color: var(--text-main);
 }
+
+/* Search Bar Styles */
+.search-container {
+  max-width: 600px;
+  margin: -20px auto 50px; /* Moves it up slightly closer to the hero section */
+  position: relative;
+}
+
+.search-input {
+  width: 100%;
+  padding: 16px 24px;
+  font-size: 1rem;
+  border-radius: 14px;
+  border: 1px solid #e2e8f0;
+  background-color: white;
+  box-shadow: var(--card-shadow);
+  transition: all 0.2s ease;
+  outline: none;
+  color: var(--text-main);
+}
+
+.search-input::placeholder {
+  color: var(--text-muted);
+}
+
+.search-input:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.1), var(--card-shadow);
+}
+
+/* Empty State Style */
+.no-results {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 40px;
+  color: var(--text-muted);
+  font-style: italic;
+  background: white;
+  border-radius: 16px;
+  border: 1px dashed #cbd5e1;
+}

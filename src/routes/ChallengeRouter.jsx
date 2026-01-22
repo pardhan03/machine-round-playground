@@ -2,6 +2,7 @@ import { useMemo, useState } from "react";
 import { Routes, Route, Link, useLocation } from "react-router-dom"
 import { ROUTES } from "../shared/utils/constant"
 import '../App.css'
+import useDebounce from "../shared/hooks/useDebounce";
 
 const ChallengeRouter = () => {
   const location = useLocation();
@@ -32,12 +33,13 @@ const ChallengeRouter = () => {
 
 const HomeView = () => {
   const [searchQuery, setSearchQuery] = useState("");
+  const debouncedInputValue = useDebounce(searchQuery, 300);
 
   const filteredRoutes = useMemo(() => {
     return ROUTES.filter((route) =>
       route.label.toLowerCase().includes(searchQuery.toLowerCase())
     );
-  }, [searchQuery]);
+  }, [debouncedInputValue]);
 
   const handleSearch = (e) => {
     setSearchQuery(e.target.value);

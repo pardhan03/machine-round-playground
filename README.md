@@ -33,13 +33,11 @@ This repo is ideal for **Frontend / React Developer interviews** at startups and
     ├── src/
     │ ├── main.jsx
     │ ├── App.jsx
-    │ │
-    │ ├── challenges/ # Individual machine-coding problems
-    │ │ ├── counter/
-    │ │ ├── todo-app/
-    │ │ ├── infinite-scroll/
-    │ │ └── ...
-    │ │
+    │ ├── challenges/ # Machine-coding problems
+    │ │ ├── drag-and-drop/
+    │ │ └── modal-outside-click/
+    │ ├── interview-questions/ # React theory & interview concepts
+    │ │ ├── controlled-uncontrolled
     │ ├── shared/ # Reusable components & hooks
     │ │ ├── components/
     │ │ ├── hooks/
@@ -94,6 +92,52 @@ This challenge focuses on handling user interactions, DOM events, and state upda
 - useRef
 - useEffect
 - Event bubbling
+
+## Interview Questions
+
+Along with machine-coding challenges, this repository also includes **commonly asked React interview questions**, explained with **clear definitions, examples, and real-world use cases**.
+
+> These questions are structured similarly to challenges so they’re easy to revise before interviews.
+
+---
+
+# Controlled Component
+
+A **controlled component** is a form element whose value is fully controlled by **React state**.
+
+## ❓ What is a Controlled Component?
+
+In a controlled component:
+- Form data is handled by React using `useState`
+- The input value is always driven by state
+- UI and state stay in sync
+
+## ✅ Characteristics
+
+- Uses `useState`
+- Uses `onChange` handler
+- Single source of truth (React)
+
+## ✅ 4️⃣ `uncontrolled-component/README.md`
+
+```md
+# Uncontrolled Component
+
+An **uncontrolled component** stores its state inside the **DOM**, not React.
+
+## ❓ What is an Uncontrolled Component?
+
+In an uncontrolled component:
+- React does not manage input state
+- Data is accessed using `useRef`
+- The DOM is the source of truth
+
+## ✅ Characteristics
+
+- Uses `useRef`
+- No re-render on every input change
+- Simpler and faster for basic use cases
+
 
 ## 🧪 How to Run Locally
 

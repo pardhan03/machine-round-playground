@@ -36,8 +36,11 @@ This repo is ideal for **Frontend / React Developer interviews** at startups and
     │ ├── challenges/ # Machine-coding problems
     │ │ ├── drag-and-drop/
     │ │ └── modal-outside-click/
+    | |
     │ ├── interview-questions/ # React theory & interview concepts
     │ │ ├── controlled-uncontrolled
+    | | └──this-keyword
+    | |
     │ ├── shared/ # Reusable components & hooks
     │ │ ├── components/
     │ │ ├── hooks/
@@ -138,6 +141,34 @@ In an uncontrolled component:
 - No re-render on every input change
 - Simpler and faster for basic use cases
 
+# `this` Keyword in JavaScript
+
+The `this` keyword in JavaScript refers to the **execution context** in which a function is called.
+
+Its value depends on **how and where the function is invoked**, not where it is defined.
+In simple terms:
+
+> **`this` refers to the object that is currently calling the function.**
+
+But the tricky part is 👉 **its value changes depending on how a function is called**.
+
+
+## 🧠 Golden Rule of `this`
+
+> **`this` is decided at the time of function execution, not definition.**
+  **this refers to the object before the dot**
+
+So don’t ask:
+❌ “Where is the function written?”
+
+Always ask:
+✅ **“How is the function called?”**
+
+## ❓ What is `this`?
+
+- `this` points to an object
+- The value of `this` is determined at **runtime**
+- Different invocation patterns result in different `this` values
 
 ## 🧪 How to Run Locally
 

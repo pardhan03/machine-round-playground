@@ -98,6 +98,7 @@ This challenge focuses on handling user interactions, DOM events, and state upda
 
 ## Interview Questions
 
+```md
 Along with machine-coding challenges, this repository also includes **commonly asked React interview questions**, explained with **clear definitions, examples, and real-world use cases**.
 
 > These questions are structured similarly to challenges so they’re easy to revise before interviews.
@@ -121,9 +122,7 @@ In a controlled component:
 - Uses `onChange` handler
 - Single source of truth (React)
 
-## ✅ 4️⃣ `uncontrolled-component/README.md`
 
-```md
 # Uncontrolled Component
 
 An **uncontrolled component** stores its state inside the **DOM**, not React.

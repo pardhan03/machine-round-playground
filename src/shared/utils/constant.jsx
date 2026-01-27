@@ -1,5 +1,6 @@
 import ModalOutsideClickApp from "../../chanllenges/modal-outside-click/App"
 import DragDrop from "../../chanllenges/drap-drop/App"
+import InfiniteScroll from "../../interview-questions/infinite-scroll/from-scratch/InfiniteScroll";
 
 export const kanbanData = [
   {
@@ -41,5 +42,10 @@ export const ROUTES = [
     path: "/kanban-board",
     label: "Drag&Drop",
     element: <DragDrop initialData={kanbanData}/>,
+  },
+  {
+    path: "/infinite-scroll",
+    label: "Infinite-scroll",
+    element: <InfiniteScroll/>,
   },
 ];

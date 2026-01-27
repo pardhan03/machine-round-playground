@@ -96,6 +96,50 @@ This challenge focuses on handling user interactions, DOM events, and state upda
 - useEffect
 - Event bubbling
 
+# Infinite Scroll
+
+Infinite scroll is a common frontend pattern where more data is loaded automatically
+as the user scrolls down the page.
+
+This challenge demonstrates **two different implementations**:
+  1. Building infinite scroll **from scratch**
+  2. Using the **Intersection Observer API**
+
+### 1️⃣ From Scratch (Scroll Events)
+- Uses `scroll` event listeners
+- Manual scroll position calculations
+- Full control over behavior
+
+## 💡 When to Use This Approach
+
+- When full control is required
+- Small applications
+- Interview rounds to show fundamentals
+
+## 🎤 Interview Tip
+
+> Always debounce the scroll handler to avoid performance issues.
+
+### 2️⃣ Intersection Observer API
+- Uses browser-native observer
+- More performant
+- Cleaner and scalable solution
+
+## 💡 When to Use This Approach
+
+- Large lists
+- Production applications
+- Performance-critical UIs
+
+## 🧠 Concepts Covered
+
+- Pagination
+- Scroll events
+- Debouncing
+- Custom hooks
+- Intersection Observer API
+- Performance optimization
+
 ## Interview Questions
 
 ```md

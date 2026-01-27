@@ -55,3 +55,14 @@ button.throttledClick = throttle(button.click, 1000);
 
 // This function will using throttling
 // const throttledFun = throttle(fun, 500)
+
+export const generateDummyData = (count, startIndex = 0) => {
+  return Array.from({ length: count }, (_, i) => ({
+    id: startIndex + i,
+    title: `Project Alpha-${startIndex + i}`,
+    description: "A deep dive into the intersection of design systems and functional programming.",
+    tags: ["React", "UI/UX", "Infinite"],
+    timestamp: "2 hours ago",
+    image: `https://picsum.photos/seed/${startIndex + i}/400/250`
+  }));
+};

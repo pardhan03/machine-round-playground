@@ -35,10 +35,12 @@ This repo is ideal for **Frontend / React Developer interviews** at startups and
     │ ├── App.jsx
     │ ├── challenges/ # Machine-coding problems
     │ │ ├── drag-and-drop/
+    | | ├── virtualization/
     │ │ └── modal-outside-click/
     | |
     │ ├── interview-questions/ # React theory & interview concepts
     │ │ ├── controlled-uncontrolled
+    | | ├── Infinit scroll
     | | └──this-keyword
     | |
     │ ├── shared/ # Reusable components & hooks
@@ -139,6 +141,67 @@ This challenge demonstrates **two different implementations**:
 - Custom hooks
 - Intersection Observer API
 - Performance optimization
+
+# Virtualized List (List Virtualization)
+
+## 📌 What is Virtualization?
+
+**Virtualization** is a performance optimization technique where:
+- Only the **visible items** in a large list are rendered
+- Off-screen items are **not mounted in the DOM**
+- Improves performance for large datasets (1000+ items)
+
+Instead of rendering all items, we calculate:
+- Start index
+- End index
+- Render only what the user can see
+
+---
+
+## ❓ Why Do We Need Virtualization?
+
+Rendering a large list:
+- Blocks the main thread
+- Causes slow scrolling
+- Increases memory usage
+
+Virtualization solves this by:
+- Reducing DOM nodes
+- Improving scroll performance
+- Making UI smooth
+
+---
+
+## 🧠 Core Concept
+
+Virtualization works using:
+- Fixed item height
+- Scroll position (`scrollTop`)
+- Visible viewport height
+
+```text
+scrollTop
+   ↓
+┌─────────────────────────┐
+│ spacer (top)            │  ← height = itemsAbove * itemHeight
+├─────────────────────────┤
+│ visible items (rendered)│
+├─────────────────────────┤
+│ spacer (bottom)         │  ← height = itemsBelow * itemHeight
+└─────────────────────────┘
+
+```
+
+## 💡 Interview Angle (Important)
+
+**Virtualization vs Infinite Scroll**
+
+| Infinite Scroll      | Virtualization      |
+|----------------------|---------------------|
+| Loads data gradually | Data already exists |
+| Focus: network       | Focus: DOM          |
+| Uses pagination      | Uses scroll math    |
+| Observer / events    | Calculated indices  |
 
 ## Interview Questions
 

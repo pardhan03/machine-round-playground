@@ -6,7 +6,7 @@ import { generateDummyData } from '../../../shared/utils/helper';
 // |                             |  ← The total height of the entire webpage content, including the part you can’t see yet without scrolling.
 // |   page content              |
 // |                             |
-// |        👀 viewport           |  ← window.innerHeight
+// |        viewport           |  ← window.innerHeight
 // |-----------------------------|
 //           ↑
 //      window.scrollY

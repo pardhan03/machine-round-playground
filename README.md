@@ -98,6 +98,30 @@ This challenge focuses on handling user interactions, DOM events, and state upda
 - useEffect
 - Event bubbling
 
+# Progress Bar Challenge
+
+## 📌 What is a Progress Bar?
+
+A **progress bar** visually represents the completion status of a task.
+
+It is commonly used for:
+- File uploads
+- Form steps
+- Loading states
+- Task completion tracking
+
+## ❓ Why Is This Asked in Interviews?
+
+Interviewers use progress bars to check:
+- State management
+- UI updates based on logic
+- Edge case handling
+- Clean component design
+
+## 🧠 Core Concept
+
+A progress bar is driven by a **percentage value (0–100)**.
+
 # Infinite Scroll
 
 Infinite scroll is a common frontend pattern where more data is loaded automatically

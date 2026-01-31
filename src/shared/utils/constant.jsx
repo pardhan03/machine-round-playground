@@ -1,6 +1,7 @@
 import ModalOutsideClickApp from "../../chanllenges/modal-outside-click/App"
 import DragDrop from "../../chanllenges/drap-drop/App"
 import InfiniteScroll from "../../interview-questions/infinite-scroll/from-scratch/InfiniteScroll";
+import InfiniteScrollObserver from "../../interview-questions/infinite-scroll/intersection-observer/InfiniteScrollObserver";
 
 export const kanbanData = [
   {
@@ -47,5 +48,10 @@ export const ROUTES = [
     path: "/infinite-scroll",
     label: "Infinite-scroll",
     element: <InfiniteScroll/>,
+  },
+  {
+    path: "/infinite-scroll-observer",
+    label: "Infinite-scroll-Observer-API",
+    element: <InfiniteScrollObserver />,
   },
 ];

@@ -227,7 +227,7 @@ scrollTop
 | Uses pagination      | Uses scroll math    |
 | Observer / events    | Calculated indices  |
 
-## Interview Questions
+### Interview Questions
 
 ```md
 Along with machine-coding challenges, this repository also includes **commonly asked React interview questions**, explained with **clear definitions, examples, and real-world use cases**.
@@ -299,6 +299,47 @@ Always ask:
 - `this` points to an object
 - The value of `this` is determined at **runtime**
 - Different invocation patterns result in different `this` values
+
+# Code Splitting (Lazy Loading) in React
+
+## 📌 What Is Code Splitting?
+
+**Code Splitting** is a performance optimization technique where your app loads **only the required JavaScript** instead of the entire bundle at once.
+
+In React, this is achieved using **`React.lazy()`** and **`Suspense`**.
+
+---
+
+## ❓ Why Is This Asked in Interviews?
+
+Interviewers check:
+- Performance optimization knowledge
+- Understanding of bundle size reduction
+- Ability to defer loading heavy components
+- Real-world production patterns
+
+---
+
+## 🧠 Core Idea (Simple Terms)
+
+> Instead of loading everything at app start, load components **only when they are needed**.
+
+This:
+- Reduces initial load time
+- Improves user experience
+- Speeds up First Contentful Paint (FCP)
+
+---
+
+## 🧩 Key APIs Used
+
+### `React.lazy()`
+Used to **dynamically import** a component.
+
+```js
+const HeavyComponent = React.lazy(() => import("./HeavyComponent"));
+```
+```
 
 ## 🧪 How to Run Locally
 

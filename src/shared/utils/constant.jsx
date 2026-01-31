@@ -3,6 +3,7 @@ import DragDrop from "../../chanllenges/drap-drop/App"
 import InfiniteScroll from "../../interview-questions/infinite-scroll/from-scratch/InfiniteScroll";
 import InfiniteScrollObserver from "../../interview-questions/infinite-scroll/intersection-observer/InfiniteScrollObserver";
 import VirtualizedList from "../../chanllenges/virtualization/VirtualizedList";
+import LazyLoading from "../../interview-questions/code-splitting/LazyLoading";
 
 const kanbanData = [
   {
@@ -59,6 +60,11 @@ export const ROUTES = [
     path: "/windowed-rendering",
     label: "Virtualized Inventory",
     element: <VirtualizedList />,
+  },
+  {
+    path: "/code-splitting",
+    label: "Code Splitting & Lazy Loading",
+    element: <LazyLoading />,
   },
 ];
 

@@ -12,13 +12,6 @@ const VirtualizedList = () => {
           <h1 className="home-title">Product Catalog</h1>
           <p className="home-subtitle">Browsing high-performance virtualization.</p>
         </header>
-        <div className="search-container">
-          <input
-            type="text"
-            className="search-input"
-            placeholder="Search 10,000+ products..."
-          />
-        </div>
         <div className="list-viewport">
           <div className="list-canvas">
             {virtualizedListData.map((product, index) => (

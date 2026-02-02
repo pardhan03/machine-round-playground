@@ -4,6 +4,7 @@ import InfiniteScroll from "../../interview-questions/infinite-scroll/from-scrat
 import InfiniteScrollObserver from "../../interview-questions/infinite-scroll/intersection-observer/InfiniteScrollObserver";
 import VirtualizedList from "../../chanllenges/virtualization/VirtualizedList";
 import LazyLoading from "../../interview-questions/code-splitting/LazyLoading";
+import ProgressBar from "../../chanllenges/progress-bar/ProgressBar";
 
 const kanbanData = [
   {
@@ -65,6 +66,11 @@ export const ROUTES = [
     path: "/code-splitting",
     label: "Code Splitting & Lazy Loading",
     element: <LazyLoading />,
+  },
+  {
+    path: "/progress-bar",
+    label: "Stateful Progress Barg",
+    element: <ProgressBar />,
   },
 ];
 

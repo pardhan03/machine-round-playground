@@ -25,6 +25,13 @@ const InfiniteScroll = () => {
     }, []);
 
     useEffect(() => {
+        // window.innerHeight = Visible screen height
+        // window.scrollY = how much user have scrolled
+        // document.body.scrollheight = total page height
+
+        // visible area bottom = innerHeight + scrollY
+        // if visible bottom >= total height - 100px
+        // user is near bottom
         const handleScroll = () => {
             if (
                 window.innerHeight + window.scrollY >=

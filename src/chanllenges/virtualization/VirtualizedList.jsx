@@ -5,8 +5,9 @@ import { virtualizedListData } from '../../shared/utils/constant'
 
 const BUFFER = 2
 
+// 800 200
 const VirtualizedList = ({ height, itemHeight }) => {
-  const visibleCount = Math.ceil(height / itemHeight)
+  const visibleCount = Math.ceil(height / itemHeight) // calculate intial count to render item intially
 
   const [range, setRange] = useState({
     start: 0,

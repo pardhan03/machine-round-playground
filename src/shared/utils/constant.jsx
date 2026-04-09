@@ -5,6 +5,7 @@ import InfiniteScrollObserver from "../../interview-questions/infinite-scroll/in
 import VirtualizedList from "../../chanllenges/virtualization/VirtualizedList";
 import LazyLoading from "../../interview-questions/code-splitting/LazyLoading";
 import ProgressBar from "../../chanllenges/progress-bar/ProgressBar";
+import EnhancedHello from "../../interview-questions/HOC/Hello";
 
 const kanbanData = [
   {
@@ -71,6 +72,11 @@ export const ROUTES = [
     path: "/progress-bar",
     label: "Stateful Progress Barg",
     element: <ProgressBar />,
+  },
+  {
+    path: "/hoc",
+    label: "Higher Order Component",
+    element: <EnhancedHello text={'World!'}/>
   },
 ];
 

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import './infinite-scroll.css'
 import { generateDummyData } from '../../../shared/utils/helper';
 

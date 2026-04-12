@@ -1,0 +1,57 @@
+.memo-challenge-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.memo-controls {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 3rem;
+  background: none; /* Override search-container background if needed */
+}
+
+/* Reusing your button style from the Hold Counter */
+.hold-button.secondary {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.hold-button.secondary:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.memo-demo-card {
+  cursor: default; /* Not a link */
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: border 0.3s ease;
+}
+
+.memo-demo-card.unoptimized {
+  border-left: 4px solid #ef4444; /* Red hint for unoptimized */
+}
+
+.memo-demo-card:not(.unoptimized) {
+  border-left: 4px solid #10b981; /* Green hint for optimized */
+}
+
+.render-tag {
+  display: inline-block;
+  margin-top: 1rem;
+  font-family: monospace;
+  font-size: 0.75rem;
+  color: #a5b4fc;
+  background: rgba(99, 102, 241, 0.1);
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+@keyframes flash {
+  0% { background: rgba(99, 102, 241, 0.3); }
+  100% { background: transparent; }
+}
+
+.memo-demo-card .card-content {
+  animation: flash 0.5s ease-out;
+}

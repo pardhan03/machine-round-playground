@@ -1,12 +1,13 @@
 import ModalOutsideClickApp from "../../chanllenges/modal-outside-click/App"
 import DragDrop from "../../chanllenges/drap-drop/App"
-import InfiniteScroll from "../../interview-questions/infinite-scroll/from-scratch/InfiniteScroll";
-import InfiniteScrollObserver from "../../interview-questions/infinite-scroll/intersection-observer/InfiniteScrollObserver";
+import InfiniteScroll from "../../chanllenges/infinite-scroll/from-scratch/InfiniteScroll";
+import InfiniteScrollObserver from "../../chanllenges/infinite-scroll/intersection-observer/InfiniteScrollObserver";
 import VirtualizedList from "../../chanllenges/virtualization/VirtualizedList";
 import LazyLoading from "../../interview-questions/code-splitting/LazyLoading";
 import ProgressBar from "../../chanllenges/progress-bar/ProgressBar";
 import EnhancedHello from "../../interview-questions/HOC/Hello";
 import HoldCounter from "../../chanllenges/hold-counter/HoldCounter";
+import ReactMemoApp from "../../interview-questions/react-memo-optimization/ReactMemoApp";
 
 const kanbanData = [
   {
@@ -82,7 +83,7 @@ export const ROUTES = [
   {
     path: "/hold-counter",
     label: "Hold to Increment",
-    element: <HoldCounter/>,
+    element: <ReactMemoApp/>,
   },
 ];
 

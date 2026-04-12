@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import './infinitescroll.css'
 
 // |-----------------------------|  ← document.body.scrollHeight -> entrire height event the

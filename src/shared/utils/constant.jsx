@@ -6,6 +6,7 @@ import VirtualizedList from "../../chanllenges/virtualization/VirtualizedList";
 import LazyLoading from "../../interview-questions/code-splitting/LazyLoading";
 import ProgressBar from "../../chanllenges/progress-bar/ProgressBar";
 import EnhancedHello from "../../interview-questions/HOC/Hello";
+import HoldCounter from "../../chanllenges/hold-counter/HoldCounter";
 
 const kanbanData = [
   {
@@ -77,6 +78,11 @@ export const ROUTES = [
     path: "/hoc",
     label: "Higher Order Component",
     element: <EnhancedHello text={'World!'}/>
+  },
+  {
+    path: "/hold-counter",
+    label: "Hold to Increment",
+    element: <HoldCounter/>,
   },
 ];
 

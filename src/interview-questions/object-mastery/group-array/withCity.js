@@ -7,7 +7,7 @@ const users = [
 const grouped = users.reduce((acc, user) => {
     // (acc[user.city] = acc[user.city] || []).push(user); this single line do the same below written clearly
     if (!acc[user.city]) {
-        acc[user.city] = [];
+        acc[user.city] = []; // { Delhi : [] };
     }
     acc[user.city].push(user);
     return acc;

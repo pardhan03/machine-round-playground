@@ -3,7 +3,7 @@ async function getData() {
 };
 
 const p = new Promise((resolve, reject) => {
-    resolve("This is the resolved promise!");
+    resolve("This is the resolved promise!"); // whatever we will pass here will be our result of resolved promise
 })
 
 const result = getData();

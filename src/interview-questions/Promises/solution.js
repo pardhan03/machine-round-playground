@@ -1,3 +1,9 @@
+
+Promise.resolve(5)
+    .then((value) => value * 2) // Multiplies by 2  whatever we retun will pass to next then block
+    .then((value) => value + 3) // Adds 3
+    .then((finalValue) => console.log(finalValue)); // Logs: 13
+
 const p1= new Promise((resolve, reject) => {
     setTimeout(() => {
         resolve("API 1 failed");
@@ -22,6 +28,8 @@ Promise.all([p1, p2, p3]).then((result) => {
     console.log("All Promise failed", err)
 })
 
+// which promise resolve will get in result
+// If first promise reject and
 Promise.any([p1, p2, p3]).then((result) => {
     console.log(" result", result);
 }).catch((err) => {

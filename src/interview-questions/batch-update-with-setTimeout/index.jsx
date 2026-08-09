@@ -35,6 +35,8 @@ const BatchUpdate = () => {
         setIsUpdating(false);
     };
 
+    console.log("Component rendered");
+
     return (
         <div className="batch-card-container">
             <div className="batch-card">

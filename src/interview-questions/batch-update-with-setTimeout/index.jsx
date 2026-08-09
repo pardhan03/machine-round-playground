@@ -29,6 +29,8 @@ const BatchUpdate = () => {
         }, 1000);
     };
 
+    // setCount(val) -> The above count will be 5
+    // setCount(prev => prev + val) -> The above count is 12
     const handleReset = () => {
         setCount(0);
         setLog([]);
